@@ -15,5 +15,11 @@
         {
             return (BaseRate * duration) + insuranceFee;
         }
+
+        //Overrides the overloaded method to display car-specific info
+        public override void DisplayInfo(string format)
+        {
+            Console.WriteLine($"Registration: {RegistrationNumber} | Model: {Model} | Base Rate: R{BaseRate} | Insurance Fee: R{insuranceFee}");
+        }
     }
 }

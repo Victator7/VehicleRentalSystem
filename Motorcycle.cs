@@ -20,5 +20,11 @@
                 cost -= cost * discountRate;  // apply discount, but only under the right conditions
             return cost;
         }
+        //Overrides the overloaded method to display bike-specific info
+        public override void DisplayInfo(string format)
+        {
+
+            Console.WriteLine($"Registration: {RegistrationNumber} | Model: {Model} | Base Rate: R{BaseRate} | Discount Rate: {discountRate * 100}%");
+        }
     }
 }

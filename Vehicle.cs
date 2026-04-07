@@ -23,6 +23,18 @@
             return baseRate * duration;
         }
 
+        //Displays information about the vehicles
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine($"Reg: {registrationNumber} | Model: {model}");
+        }
+
+        //Displays more information. User simple inputs a string (like "full" or "detailed")
+        public virtual void DisplayInfo(string format)
+        {
+            Console.WriteLine($"Registration: {RegistrationNumber} | Model: {Model} | Base Rate: R{BaseRate}");
+        }
     }
 }
+
 
